@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model
-MODEL_PATH = os.path.join("..", "ml", "models", "model_ansaju.pkl")
-FEATURE_PATH = os.path.join("..", "ml", "models", "fitur_model.pkl")
+MODEL_PATH = os.path.join("model_ansaju.pkl")
+FEATURE_PATH = os.path.join("fitur_model.pkl")
 
 model = joblib.load(MODEL_PATH)
 fitur = joblib.load(FEATURE_PATH)
